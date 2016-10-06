@@ -41,7 +41,7 @@
         <td><?= $form->textarea(['name' => 'comments']) ?></td></tr>
 
     <tr><td>Enter your email address for order confirmation:</td>
-    <td><?= $form->input('text',['name' => 'Email']) ?></td></tr>
+    <td><?= $form->input('text',['name' => 'email']) ?></td></tr>
 
     <tr><td colspan="2" align="center"><?= $form->input('submit', ['value' => 'Order']) ?>
     </td></tr>

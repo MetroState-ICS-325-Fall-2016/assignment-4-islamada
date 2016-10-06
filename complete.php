@@ -24,6 +24,7 @@ $main_dishes = array('cuke' => 'Braised Sea Cucumber',
 $drinks = array('coke' => 'Coke',
     'diet coke' => 'diet Coke',
     'sprite' => 'Sprite',
+    'water' => 'Water',
     'milk' => 'Milk');
 
 // The main page logic:
@@ -151,7 +152,9 @@ function process_form($input) {
     }
     // build up the text of the order message
     $message=<<<_ORDER_
-Thank you for your order, {$input['name']} at {$input['text']}.
+Thank you for your order, {$input['name']} at {$input['email
+
+']}.
 You requested the {$input['size']} size of $sweet, $main_dish_1, and $main_dish_2.
 You $delivery want delivery.\n
 _ORDER_;
